@@ -11,6 +11,8 @@ function felvesz() {
     let title = document.getElementById('title').value;
     let year = document.getElementById('year').value;
     let currentYear = new Date().getFullYear();
+    let price = document.getElementById('price').value;
+    let magassag = document.getElementById('height').value;
     if (title.length == 0) {
         document.getElementById('titleErrorMsg').textContent = "A műtermék címe nem lehet üres!";
     }
@@ -28,5 +30,14 @@ function felvesz() {
     }
     else {
         document.getElementById('yearErrorMsg').textContent = "";
+    }
+    if (parseInt(price) < 1) {
+        document.getElementById('priceErrorMsg').textContent = "Az ár nem lehet kisebb, mint 1!";
+    }
+    else if (price.length == 0) {
+        document.getElementById('priceErrorMsg').textContent = "Az ár nem lehet üres!";
+    }
+    else {
+        document.getElementById('priceErrorMsg').textContent = "";
     }
 }
