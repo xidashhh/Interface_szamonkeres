@@ -10,6 +10,9 @@
 </head>
 <body>
 
+    <div>Darabszám: <span id="amount">0</span></div>
+    <div>Összesített érték: <span id="priceSum">0</span></div>
+
     <label for="title">Műtermék neve</label>
     <input type="text" id="title">
 
@@ -23,11 +26,12 @@
     <input type="number" id="height" min="0">
 
     <button id="add">Felvesz</button>
+    <br><br>
 
-    <div id="titleErrorMsg"></div>
-    <div id="yearErrorMsg"></div>
-    <div id="priceErrorMsg"></div>
-    <div id="heightErrorMsg"></div>
+    <div id="titleErrorMsg" style="color: red;"></div>
+    <div id="yearErrorMsg" style="color: red;"></div>
+    <div id="priceErrorMsg" style="color: red;"></div>
+    <div id="heightErrorMsg" style="color: red;"></div>
 
     
 </body>
